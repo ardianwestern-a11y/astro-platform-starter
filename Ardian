@@ -1,0 +1,164 @@
+import React from "react";
+
+// Ardian-Berisha-SP-Website.jsx // Versione vetëm në gjuhën sllovene
+
+export default function ArdianBerishaWebsite() { return ( <div className="min-h-screen bg-gray-50 text-gray-800 font-sans"> {/* NAV */} <header className="bg-white shadow-sm sticky top-0 z-40"> <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"> <div className="flex items-center gap-4"> <img src="/assets/logo-3d.png" alt="Ardian Berisha SP logo" className="w-16 h-16 object-contain rounded" /> <div> <h1 className="text-xl font-extrabold tracking-tight">Ardian Berisha SP</h1> <p className="text-xs text-gray-500">Gradbeništvo | Fasade</p> </div> </div> <nav className="hidden md:flex gap-6 items-center text-sm"> <a href="#about" className="hover:text-sky-600">O nas</a> <a href="#services" className="hover:text-sky-600">Storitve</a> <a href="#projects" className="hover:text-sky-600">Projekti</a> <a href="#gallery" className="hover:text-sky-600">Galerija</a> <a href="#contact" className="bg-sky-600 text-white px-4 py-2 rounded-md shadow hover:opacity-95">Kontakt</a> </nav> </div> </header>
+
+{/* HERO */}
+  <section className="relative bg-[url('/assets/hero-construction.jpg')] bg-cover bg-center text-white">
+    <div className="backdrop-blur-sm bg-black/40">
+      <div className="max-w-6xl mx-auto px-6 py-28 flex flex-col md:flex-row items-center gap-10">
+        <div className="w-full md:w-1/2">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight">Ardian Berisha SP</h2>
+          <p className="mt-4 text-lg max-w-xl">
+            Zanesljiv partner za gradbeništvo in fasadne storitve. 
+            Nudimo rešitve za podjetja in posameznike, ki iščejo kakovost in sodoben dizajn.
+          </p>
+          <div className="mt-6 flex gap-3">
+            <a href="#contact" className="inline-block bg-yellow-500 text-black px-5 py-3 rounded-md font-semibold">Zahtevaj ponudbo</a>
+            <a href="#projects" className="inline-block border border-white/40 px-5 py-3 rounded-md">Poglej projekte</a>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2">
+          <div className="bg-white/10 p-6 rounded-2xl shadow-lg max-w-md">
+            <h3 className="text-xl font-semibold">Zakaj izbrati nas</h3>
+            <ul className="mt-4 space-y-3 text-sm">
+              <li>• Fleksibilni projekti po meri naročnika</li>
+              <li>• Kakovostne storitve za posameznike in podjetja</li>
+              <li>• Sodobne in personalizirane rešitve</li>
+              <li>• Jasni roki in konkurenčne cene</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ABOUT */}
+  <section id="about" className="max-w-6xl mx-auto px-6 py-16">
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 className="text-2xl font-bold">O podjetju</h3>
+        <p className="mt-4 text-lg leading-relaxed">
+          <strong>Ardian Berisha SP</strong> je gradbeno podjetje, ki združuje profesionalnost, kakovost in inovacije pri ustvarjanju funkcionalnih in estetskih objektov. Delamo tako s posamezniki kot tudi s podjetji, ki iščejo zanesljivega partnerja za velike ali majhne projekte.
+        </p>
+      </div>
+      <div className="space-y-4">
+        <div className="bg-white p-4 rounded shadow">
+          <h4 className="font-semibold">Kaj počnemo</h4>
+          <p className="text-sm text-gray-700 mt-2">Od sodobne gradnje, estetskih fasad do učinkovite izolacije in notranjih zaključnih del.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* SERVICES */}
+  <section id="services" className="bg-white/50 py-12">
+    <div className="max-w-6xl mx-auto px-6">
+      <h3 className="text-2xl font-bold">Naše storitve</h3>
+      <p className="mt-2 text-sm text-gray-600">Celovite rešitve za vsak gradbeni in fasadni projekt.</p>
+
+      <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h4 className="font-semibold">Gradnja objektov</h4>
+          <p className="mt-2 text-sm text-gray-600">Stanovanjski in poslovni objekti, od temeljev do zaključka.</p>
+        </div>
+
+        <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h4 className="font-semibold">Fasade & Izolacija</h4>
+          <p className="mt-2 text-sm text-gray-600">Fasadni sistemi, toplotna izolacija in sodoben dizajn.</p>
+        </div>
+
+        <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h4 className="font-semibold">Prenove</h4>
+          <p className="mt-2 text-sm text-gray-600">Celovite prenove obstoječih prostorov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* PROJECTS */}
+  <section id="projects" className="max-w-6xl mx-auto px-6 py-12">
+    <h3 className="text-2xl font-bold">Naši projekti</h3>
+    <p className="text-sm text-gray-600 mt-2">Nekaj uspešno zaključenih del</p>
+
+    <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="rounded overflow-hidden bg-gray-100 p-2 shadow">
+        <img src="/assets/project-1.jpg" alt="Projekt 1" className="w-full h-48 object-cover rounded" />
+        <div className="p-3">
+          <h4 className="font-semibold">Poslovni objekt</h4>
+          <p className="text-sm text-gray-600">Gradnja in moderna fasada za poslovne prostore.</p>
+        </div>
+      </div>
+      <div className="rounded overflow-hidden bg-gray-100 p-2 shadow">
+        <img src="/assets/project-2.jpg" alt="Projekt 2" className="w-full h-48 object-cover rounded" />
+        <div className="p-3">
+          <h4 className="font-semibold">Stanovanjski kompleks</h4>
+          <p className="text-sm text-gray-600">Nove stanovanjske enote s funkcionalnim in estetskim dizajnom.</p>
+        </div>
+      </div>
+      <div className="rounded overflow-hidden bg-gray-100 p-2 shadow">
+        <img src="/assets/project-3.jpg" alt="Projekt 3" className="w-full h-48 object-cover rounded" />
+        <div className="p-3">
+          <h4 className="font-semibold">Fasadna dela</h4>
+          <p className="text-sm text-gray-600">Toplotna izolacija in fasade po evropskih standardih.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* GALLERY */}
+  <section id="gallery" className="bg-sky-50 py-12">
+    <div className="max-w-6xl mx-auto px-6">
+      <h3 className="text-2xl font-bold">Galerija del</h3>
+      <p className="text-sm text-gray-600 mt-2">Različni pogledi iz naših procesov in izvedb</p>
+
+      <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <img src="/assets/gallery-1.jpg" alt="Gradbena dela" className="w-full h-48 object-cover rounded shadow" />
+        <img src="/assets/gallery-2.jpg" alt="Moderna fasada" className="w-full h-48 object-cover rounded shadow" />
+        <img src="/assets/gallery-3.jpg" alt="Toplotna izolacija" className="w-full h-48 object-cover rounded shadow" />
+        <img src="/assets/gallery-4.jpg" alt="Notranja dela" className="w-full h-48 object-cover rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+  {/* CONTACT */}
+  <section id="contact" className="bg-gray-900 text-gray-200 py-12">
+    <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 className="text-2xl font-bold">Kontakt</h3>
+        <p className="mt-2 text-sm text-gray-400">Zanesljiv partner za vaš naslednji projekt.</p>
+        <div className="mt-6 space-y-3 text-sm">
+          <div><strong>Naslov:</strong> Priština</div>
+          <div><strong>Telefon:</strong> +383 49 000 000</div>
+          <div><strong>Email:</strong> <a className="text-sky-400 underline" href="mailto:kontakt@ardianberisha.com">kontakt@ardianberisha.com</a></div>
+        </div>
+      </div>
+      <div>
+        <form action="mailto:kontakt@ardianberisha.com" method="post" encType="text/plain" className="grid gap-3">
+          <input name="name" placeholder="Vaše ime" className="p-3 border rounded" required />
+          <input name="email" placeholder="Email" type="email" className="p-3 border rounded" required />
+          <textarea name="message" placeholder="Opis projekta" className="p-3 border rounded h-32" required />
+          <button className="px-4 py-3 bg-sky-600 text-white rounded font-semibold hover:bg-sky-500">Pošlji sporočilo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  {/* FOOTER */}
+  <footer className="bg-gray-800 text-gray-300 py-8">
+    <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <h4 className="font-bold text-white">Ardian Berisha SP</h4>
+        <p className="text-sm mt-2">Gradnja | Fasade | Partner za podjetja in posameznike</p>
+      </div>
+      <div className="text-sm">
+        <div>© {new Date().getFullYear()} Ardian Berisha SP</div>
+        <div className="mt-2">Nudimo profesionalne storitve na področju gradbeništva in fasad.</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+); }
+
